@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#003865">
+  <meta name="description" content="Portal institucional do Colégio Estadual Santa Felicidade.">
+  <title>Colégio Estadual Santa Felicidade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <span><i class="fa-solid fa-location-dot"></i> Curitiba - PR</span>
+        <span><i class="fa-regular fa-clock"></i> Atendimento escolar</span>
+      </div>
+      <span>Portal Institucional</span>
+    </div>
+  </div>
+
+  <header class="header-main">
+    <div class="container header-content">
+      <a href="#inicio" class="brand">
+        <div class="brand-logo">SF</div>
+        <div class="brand-text">
+          <h1>Colégio Estadual<br>Santa Felicidade</h1>
+          <span>Portal Institucional</span>
+        </div>
+      </a>
+      <div class="header-action">
+        <a href="#contatos" class="header-button"><i class="fa-regular fa-envelope"></i> Fale Conosco</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Navegação principal">
+    <div class="container nav-content">
+      <div class="desktop-navigation">
+        <ul class="nav-list">
+          <li><a href="#inicio"><i class="fa-solid fa-house"></i> Início</a></li>
+          <li class="has-dropdown">
+            <button type="button">Institucional <i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="dropdown">
+              <li><a href="#institucional">Sobre o Colégio</a></li>
+              <li><a href="#institucional">Nossa História</a></li>
+              <li><a href="#institucional">Direção</a></li>
+              <li><a href="#institucional">Equipe Escolar</a></li>
+              <li><a href="#institucional">Projeto Político-Pedagógico</a></li>
+              <li><a href="#apmf">APMF</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <button type="button">Setores <i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="dropdown">
+              <li><a href="#apmf">APMF</a></li>
+              <li><a href="#militar">Setor Militar</a></li>
+              <li><a href="#biblioteca">Biblioteca</a></li>
+              <li><a href="#institucional">Equipe Pedagógica</a></li>
+              <li><a href="#institucional">Secretaria</a></li>
+            </ul>
+          </li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#avisos">Comunicados</a></li>
+          <li><a href="#horarios">Horários</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </div>
+      <button class="mobile-menu-button" id="openDrawer" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i> Menu
+      </button>
+      <a href="#contatos" class="nav-search" aria-label="Contatos"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu de navegação" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <div class="brand-logo">SF</div>
+        <span>Colégio Estadual<br>Santa Felicidade</span>
+      </div>
+      <button class="drawer-close" id="closeDrawer" aria-label="Fechar menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-list">
+      <li><a href="#inicio">Início</a></li>
+      <li>
+        <button class="drawer-accordion" aria-expanded="false">Institucional <i class="fa-solid fa-chevron-down"></i></button>
+        <ul class="drawer-submenu">
+          <li><a href="#institucional">Sobre o Colégio</a></li>
+          <li><a href="#institucional">Nossa História</a></li>
+          <li><a href="#institucional">Direção</a></li>
+          <li><a href="#institucional">Equipe Escolar</a></li>
+          <li><a href="#institucional">Projeto Político-Pedagógico</a></li>
+          <li><a href="#apmf">APMF</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="drawer-accordion" aria-expanded="false">Setores <i class="fa-solid fa-chevron-down"></i></button>
+        <ul class="drawer-submenu">
+          <li><a href="#apmf">APMF</a></li>
+          <li><a href="#militar">Setor Militar</a></li>
+          <li><a href="#biblioteca">Biblioteca</a></li>
+          <li><a href="#institucional">Equipe Pedagógica</a></li>
+          <li><a href="#institucional">Secretaria</a></li>
+        </ul>
+      </li>
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#avisos">Comunicados</a></li>
+      <li><a href="#horarios">Horários de Aula</a></li>
+      <li><a href="#contatos">Contatos</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-label">Bem-vindo ao nosso portal</span>
+          <h2>Colégio Estadual<br>Santa Felicidade</h2>
+          <p>Um espaço dedicado à informação, à educação e à comunicação com toda a nossa comunidade escolar. Acompanhe nossas notícias, comunicados e atividades.</p>
+          <div class="hero-actions">
+            <a href="#noticias" class="btn btn-green"><i class="fa-regular fa-newspaper"></i> Últimas Notícias</a>
+            <a href="#institucional" class="btn btn-outline">Conheça o Colégio <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container quick-access">
+      <div class="quick-grid">
+        <a href="#horarios" class="quick-item"><div class="quick-icon"><i class="fa-regular fa-clock"></i></div><div><strong>Horários de Aula</strong><span>Consulte os turnos</span></div></a>
+        <a href="#avisos" class="quick-item"><div class="quick-icon"><i class="fa-solid fa-bullhorn"></i></div><div><strong>Comunicados</strong><span>Informações importantes</span></div></a>
+        <a href="#biblioteca" class="quick-item"><div class="quick-icon"><i class="fa-solid fa-book-open"></i></div><div><strong>Biblioteca</strong><span>Conheça nosso acervo</span></div></a>
+        <a href="#contatos" class="quick-item"><div class="quick-icon"><i class="fa-regular fa-comments"></i></div><div><strong>Atendimento</strong><span>Entre em contato</span></div></a>
+      </div>
+    </div>
+
+    <section class="section section-light" id="noticias">
+      <div class="container">
+        <div class="news-layout">
+          <div>
+            <div class="section-heading">
+              <span class="eyebrow">Acompanhe o colégio</span>
+              <h2>Notícias e acontecimentos</h2>
+              <p>Confira as últimas notícias, projetos, atividades e acontecimentos da comunidade escolar.</p>
+            </div>
+            <div class="news-grid" id="newsGrid"></div>
+          </div>
+          <aside id="avisos">
+            <div class="notice-panel">
+              <div class="notice-header"><i class="fa-solid fa-clipboard-list"></i> Avisos e Comunicados</div>
+              <ul class="notice-list" id="noticeList"></ul>
+              <a href="#avisos" class="notice-footer">Consultar todos os comunicados <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="horarios">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Organização escolar</span>
+          <h2>Horários de Aula</h2>
+          <p>Consulte as informações referentes aos horários de funcionamento dos diferentes turnos.</p>
+        </div>
+        <div class="schedule-box">
+          <div class="schedule-tabs" role="tablist" aria-label="Turnos escolares">
+            <button class="schedule-tab active" role="tab" aria-selected="true" data-turno="matutino"><i class="fa-solid fa-sun"></i> Matutino</button>
+            <button class="schedule-tab" role="tab" aria-selected="false" data-turno="vespertino"><i class="fa-solid fa-cloud-sun"></i> Vespertino</button>
+            <button class="schedule-tab" role="tab" aria-selected="false" data-turno="noturno"><i class="fa-solid fa-moon"></i> Noturno</button>
+          </div>
+          <div class="schedule-content" id="scheduleContent" role="tabpanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="institucional">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Conheça nossa estrutura</span>
+          <h2>Áreas e Setores</h2>
+          <p>Conheça os principais setores e espaços que compõem a organização do nosso colégio.</p>
+        </div>
+        <div class="sectors-grid">
+          <article class="sector-card" id="apmf">
+            <div class="sector-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3>APMF</h3>
+            <p>Informações sobre a Associação de Pais, Mestres e Funcionários, sua atuação e participação na comunidade escolar.</p>
+            <a href="#apmf">Conhecer a APMF <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="sector-card" id="militar">
+            <div class="sector-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Setor Militar</h3>
+            <p>Espaço destinado à apresentação das atividades, orientações e informações relacionadas ao setor militar.</p>
+            <a href="#militar">Conhecer o setor <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="sector-card" id="biblioteca">
+            <div class="sector-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Biblioteca</h3>
+            <p>Conheça a biblioteca escolar, seu acervo, os serviços disponíveis e as atividades de incentivo à leitura.</p>
+            <a href="#biblioteca">Conhecer a biblioteca <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contatos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Estamos à disposição</span>
+          <h2>Entre em contato</h2>
+          <p>Utilize nossos canais de atendimento para entrar em contato com o colégio.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card"><i class="fa-brands fa-whatsapp"></i><h3>WhatsApp</h3><p>Entre em contato diretamente pelo WhatsApp institucional.</p><a href="#" id="whatsappLink">Enviar mensagem <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="contact-card"><i class="fa-regular fa-envelope"></i><h3>E-mail</h3><p>Envie suas dúvidas, solicitações e mensagens à equipe escolar.</p><a href="#" id="emailLink">Enviar e-mail <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="contact-card"><i class="fa-solid fa-location-dot"></i><h3>Localização</h3><p>Consulte o endereço e as informações de localização do colégio.</p><a href="#" id="mapLink">Ver localização <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-logo">SF</div>
+            <div class="brand-text"><h1>Colégio Estadual<br>Santa Felicidade</h1><span>Portal Institucional</span></div>
+          </div>
+          <p class="footer-about">Portal institucional do Colégio Estadual Santa Felicidade, dedicado à comunicação, informação e integração com a comunidade escolar.</p>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li><li><a href="#institucional">Institucional</a></li><li><a href="#noticias">Notícias</a></li><li><a href="#avisos">Comunicados</a></li><li><a href="#horarios">Horários de Aula</a></li><li><a href="#contatos">Contatos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Setores</h3>
+          <ul class="footer-links">
+            <li><a href="#apmf">APMF</a></li><li><a href="#militar">Setor Militar</a></li><li><a href="#biblioteca">Biblioteca</a></li><li><a href="#institucional">Equipe Pedagógica</a></li><li><a href="#institucional">Secretaria</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Colégio Estadual Santa Felicidade. Todos os direitos reservados.</span>
+        <span>Portal Institucional</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
