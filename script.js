@@ -51,10 +51,8 @@ const horarios = {
     descricao: "Horários referentes ao período da tarde.",
     aulas: []
   },
-  noturno: {
-    titulo: "Turno Noturno",
-    descricao: "Horários referentes ao período da noite.",
-    aulas: []
+  
+
   }
 };
 
